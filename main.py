@@ -68,18 +68,6 @@ def insert(root, key):
           root.right = rightRotate(root.right)
           return leftRotate(root)
   return root
-      
-  height(node)
-  balance = balanceFactor(node)
-
-  if balance < -1:
-    pass
-  elif balance > 1:
-    if key < root.left.key:
-      return rightRotate(root)
-    else:
-      root.left = leftRotate(root.left)
-      return rightRotate(root)
 
 def delete(root, key):
   if not root:
