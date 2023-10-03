@@ -121,9 +121,3 @@ def search(root, key):
         return search(root.left, key)
       else:
         return search(root.right, key)
-
-if __name__ == "__main__":
-  root = None
-  root = insert(root, 2)
-  root = insert(root, 3)
-  #falta retornar corretamente o nodo, não a raiz
